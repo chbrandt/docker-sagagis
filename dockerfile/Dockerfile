@@ -24,6 +24,7 @@ RUN _TMPDIR=$(mktemp -d) && cd $_TMPDIR && \
     ./configure && \
     make && \
     make install && \
+    ldconfig && \
     cd && \
     rm -rf $_TMPDIR
 
